@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>School_Management_local</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  <servlet-name>admin</servlet-name>
+  <servlet-class>AdminLogin</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>studentlog</servlet-name>
+  <servlet-class>StudentLogin</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>registration</servlet-name>
+  <servlet-class>StudentRegistration</servlet-class>
+  </servlet>
+   <servlet>
+  <servlet-name>searchstudent</servlet-name>
+  <servlet-class>SearchStudent</servlet-class>
+  </servlet>
+  
+    <servlet>
+  <servlet-name>updatestudent</servlet-name>
+  <servlet-class>Update</servlet-class>
+  </servlet>
+  
+   <servlet>
+  <servlet-name>time</servlet-name>
+  <servlet-class>TimeTable</servlet-class>
+  </servlet>
+  
+    <servlet>
+  <servlet-name>teacherlogin</servlet-name>
+  <servlet-class>TeacherLogin</servlet-class>
+  </servlet>
+  
+   <servlet>
+  <servlet-name>teachertime</servlet-name>
+  <servlet-class>TeacherTimeTable</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>AddAssign</servlet-name>
+  <servlet-class>addAssignment</servlet-class>
+  </servlet>
+  
+    <servlet>
+  <servlet-name>showAssignment</servlet-name>
+  <servlet-class>ShowAssignment</servlet-class>
+  </servlet>
+  
+     <servlet>
+  <servlet-name>addteach</servlet-name>
+  <servlet-class>AddTeacher</servlet-class>
+  </servlet>
+  
+   <servlet>
+  <servlet-name>addatten</servlet-name>
+  <servlet-class>AddAttendance</servlet-class>
+  </servlet>
+  
+     <servlet>
+  <servlet-name>Save</servlet-name>
+  <servlet-class>SaveAttendance</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>admin</servlet-name>
+  <url-pattern>/admin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>registration</servlet-name>
+  <url-pattern>/reg</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+  <servlet-name>studentlog</servlet-name>
+  <url-pattern>/student</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet-mapping>
+  <servlet-name>searchstudent</servlet-name>
+  <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet-mapping>
+  <servlet-name>updatestudent</servlet-name>
+  <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+  <servlet-name>time</servlet-name>
+  <url-pattern>/timetable</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+  <servlet-name>teacherlogin</servlet-name>
+  <url-pattern>/teacher</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>teachertime</servlet-name>
+  <url-pattern>/teachertimetable</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+  <servlet-name>AddAssign</servlet-name>
+  <url-pattern>/addAssignment</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+  <servlet-name>showAssignment</servlet-name>
+  <url-pattern>/assignment</url-pattern>
+  </servlet-mapping>
+  
+     <servlet-mapping>
+  <servlet-name>addteach</servlet-name>
+  <url-pattern>/AddTeacher</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+  <servlet-name>addatten</servlet-name>
+  <url-pattern>/AddAttendance</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet-mapping>
+  <servlet-name>Save</servlet-name>
+  <url-pattern>/saveattendance</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+</web-app>

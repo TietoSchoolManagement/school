@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Student Portal</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="student.jsp">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="studentProfile.jsp">Profile</a>
+        </li>
+          <li class="nav-item">
+        	 <form action="timetable" method="post">
+			<input type="hidden" value="${std}" name="std">
+			<button type="submit" class="btn">Show TimeTable</button>
+			</form>
+        </li>
+        
+
+          <li class="nav-item">
+           <form action="assignment" method="post">
+			<input type="hidden" value="${std}" name="std">
+			<button type="submit" class="btn">Show Assignments</button>
+			</form>
+
+        </li>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Complaint</a>
+        </li>
+      
+      </ul>
+		   <ul class="nav justify-content-end">
+		  <li class="nav-item">
+		    <form action="studentlogout" method="get">
+		    	<button type="submit" class="btn btn-primary" value="logout">Logout</button>
+		    </form>
+		  </li>
+		  </ul>
+    </div>
+  </div>
+</nav>
